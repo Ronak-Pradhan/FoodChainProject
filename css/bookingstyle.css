@@ -1,0 +1,182 @@
+/* fonts */
+@font-face {
+    font-family: "Raleway-regular";
+    src: url(../fonts/Raleway-Regular.ttf);
+  }
+  
+  @font-face {
+    font-family: "Raleway-medium";
+    src: url(../fonts/Raleway-Medium.ttf);
+  }
+  
+  @font-face {
+    font-family: "Raleway-semibold";
+    src: url(../fonts/Raleway-SemiBold.ttf);
+  }
+  
+  @font-face {
+    font-family: "Raleway-black";
+    src: url(../fonts/Raleway-Black.ttf);
+  }
+  
+  /* colors */
+  :root {
+    --primary: #eebf00;
+    --secondary: #232b38;
+    --ternary: #6c6c6c;
+    --danger: #fe4545;
+    --pure: #fefefe;
+    --light: #f0f0f0;
+    --heaven: #ffffff;
+    --footer: #2d333f;
+  }
+  
+  /*Reset Spacing*/
+  * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  @media (min-width: 576px) {
+    .container {
+      max-width: 540px;
+    }
+  }
+  @media (min-width: 768px) {
+    .container {
+      max-width: 720px;
+    }
+  }
+  
+  @media (min-width: 992px) {
+    .container {
+      max-width: 960px;
+    }
+  }
+  
+  @media (min-width: 1200px) {
+    .container {
+      max-width: 1152px;
+    }
+  }
+  
+  header.topbar {
+    background: var(--secondary);
+    color: var(--pure);
+    font-family: "Raleway-semibold";
+    padding: 0.75rem 0;
+  }
+  
+  header.topbar .auth > div a {
+    color: var(--pure);
+    text-decoration: none;
+  }
+  
+  header.topbar .icons a {
+    margin-right: 0.6rem;
+  }
+  header.topbar .auth .Divider {
+    padding: 0 1rem;
+  }
+  header.topbar .auth > div img {
+    margin-right: 0.35rem;
+  }
+  
+  header.topbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  header.topbar .auth {
+    display: flex;
+  }
+   
+
+section{
+  font-family: 'Poppins',sans-serif;
+}
+.banner{
+  min-height:100vh;
+  background:linear-gradient(rgba(0,0,0,0.5),rgba(49, 41, 41, 0.5)) ,url(../images/background-card.jpg)center/ cover no-repeat;
+  display:flex;
+  color:white;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-bottom: 20px;
+}
+
+.card-container{
+  display: grid;
+  grid-template-columns: 420px 420px;
+
+}
+
+.card-img{
+  background: url(../images/card.jpg)center/ cover no-repeat;
+
+}
+
+.banner h2{
+  padding-bottom: 40px;
+  margin-bottom: 20px;
+  
+}
+
+.card-content{
+  background:white;
+  height:320px;
+}
+
+.card-content h3{
+  color:black;
+  text-align: center;
+  padding:25px 0 10px 0;
+  font-size: 26px;
+  font-weight: 500;
+}
+
+.form-row{
+  display:flex;
+  width:90%;
+  margin:0 auto;
+}
+
+form select, form input{
+  display: block;
+  width:100%;
+  margin: 15px 12px;
+  padding:5px;
+  font-size:15px;
+  font-family:'Poppins',sans-serif;
+  outline:none;
+  border:none;
+  border-bottom: 1px solid lightgray;
+  font-weight:300;
+}
+
+form input[type=text],form input[type=number],form input::placeholder,select{
+  color:lightgray;
+}
+
+form input[type=submit]{
+  color:white;
+  background:grey;
+  padding: 12px 0;
+  border-radius: 4px;
+  cursor: pointer;
+}
+form input[type=submit]:hover{
+  background: black;
+}
+
+@media(max-width:992px){
+  .card-container{
+    grid-template-columns: 100%;
+  }
+  .card-img{
+    height:330px;
+  }
+}
+  
